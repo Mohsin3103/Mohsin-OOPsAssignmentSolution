@@ -21,7 +21,7 @@ public class Driver {
                 //HR Department Functionalities
 		
 		System.out.println("Welcome to "+ HR.departmentName());
-		System.out.println(((HRDepartment) HR).doActivity());
+		System.out.println(((HRDepartment) HR).doActivity());  // Downcasting since method is not defined in SuperDepartment Class
 		System.out.println(HR.getTodaysWork());
 		System.out.println(HR.getWorkDeadline());
 		System.out.println(HR.isTodayAHoliday() + "\n");
@@ -32,7 +32,7 @@ public class Driver {
 		System.out.println("Welcome to "+ Tech.departmentName());
 		System.out.println(Tech.getTodaysWork());
 		System.out.println(Tech.getWorkDeadline());
-		System.out.println(((TechDepartment) Tech).getTechStackInformation());
+		System.out.println(((TechDepartment) Tech).getTechStackInformation()); // Downcasting since method is not defined in SuperDepartment Class
 		System.out.println(Tech.isTodayAHoliday());
 	}
 }
