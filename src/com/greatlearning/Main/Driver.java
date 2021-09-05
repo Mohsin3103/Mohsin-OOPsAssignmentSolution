@@ -5,6 +5,8 @@ public class Driver {
 
 	public static void main(String[] args) {
 		
+		// Invoking Objects Using SuperDepartment Class
+		
 		SuperDepartment Admin = new AdminDepartment();
 		SuperDepartment HR = new HRDepartment();
 		SuperDepartment Tech = new TechDepartment();
@@ -16,7 +18,7 @@ public class Driver {
 		System.out.println(Admin.getWorkDeadline());
 		System.out.println(Admin.isTodayAHoliday() + "\n");
 		
-        //HR Department Functionalities
+                //HR Department Functionalities
 		
 		System.out.println("Welcome to "+ HR.departmentName());
 		System.out.println(((HRDepartment) HR).doActivity());
